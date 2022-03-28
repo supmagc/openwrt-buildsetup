@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull origin
+
 if [! -d '../openwrt']; then
     cd ../
     git clone https://git.openwrt.org/openwrt/openwrt.git
