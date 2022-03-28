@@ -19,14 +19,14 @@ fi
 ./scripts/feeds install -a
 cd ../openwrt-buildsetup
 
-rm -r ../openwrt/patches
-rm -r ../openwrt/files
+if [ -d '../openwrt/patches' ]; rm -r ../openwrt/patches
+if [ -d '../openwrt/files' ]; rm -r ../openwrt/files
 cp -p ./configs/config.buildinfo ../openwrt/.config
 cp -rp ./patches ../openwrt/
 cp -rp ./files ../openwrt/
 
 cd ../openwrt
-git am
+git am ./patches
 make dirclean
 make menuconfig
 make defconfig
