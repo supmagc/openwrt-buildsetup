@@ -19,8 +19,8 @@ fi
 ./scripts/feeds install -a
 cd ../openwrt-buildsetup
 
-if [ -d '../openwrt/patches' ]; rm -r ../openwrt/patches
-if [ -d '../openwrt/files' ]; rm -r ../openwrt/files
+if [ -d '../openwrt/patches' ]; then rm -r '../openwrt/patches'; fi
+if [ -d '../openwrt/files' ]; then rm -r '../openwrt/files'; fi
 cp -p ./configs/config.buildinfo ../openwrt/.config
 cp -rp ./patches ../openwrt/
 cp -rp ./files ../openwrt/
