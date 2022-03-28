@@ -1,0 +1,5 @@
+uci -q set irqbalance.enabled='1'
+uci commit irqbalance
+
+uci -q set globals.packet_steering ='1'
+uci commit globals

@@ -1,0 +1,193 @@
+CONFIG_TARGET_mvebu=y
+CONFIG_TARGET_mvebu_cortexa9=y
+CONFIG_TARGET_MULTI_PROFILE=y
+CONFIG_TARGET_DEVICE_mvebu_cortexa9_DEVICE_linksys_wrt1200ac=y
+CONFIG_TARGET_DEVICE_mvebu_cortexa9_DEVICE_linksys_wrt1900ac-v2=y
+CONFIG_TARGET_DEVICE_mvebu_cortexa9_DEVICE_linksys_wrt1900ac-v1=y
+CONFIG_TARGET_DEVICE_mvebu_cortexa9_DEVICE_linksys_wrt3200acm=y
+CONFIG_TARGET_DEVICE_mvebu_cortexa9_DEVICE_linksys_wrt1900acs=y
+CONFIG_TARGET_DEVICE_mvebu_cortexa9_DEVICE_linksys_wrt32x=y
+CONFIG_ALL_KMODS=y
+CONFIG_ALL_NONSHARED=y
+CONFIG_BUSYBOX_DEFAULT_PIE=y
+CONFIG_FEED_telephony=m
+CONFIG_FSTOOLS_OVL_MOUNT_COMPRESS_ZLIB=y
+CONFIG_IMAGEOPT=y
+CONFIG_IPK_FILES_CHECKSUMS=y
+CONFIG_KERNEL_BUILD_DOMAIN="openwrt-builder"
+CONFIG_KERNEL_BUILD_USER="jelle"
+# CONFIG_KERNEL_CC_STACKPROTECTOR_REGULAR is not set
+CONFIG_KERNEL_CC_STACKPROTECTOR_STRONG=y
+CONFIG_KERNEL_STACKPROTECTOR_STRONG=y
+# CONFIG_KERNEL_CRASH_DUMP is not set
+# CONFIG_KERNEL_DEBUG_INFO is not set
+# CONFIG_KERNEL_DEBUG_KERNEL is not set
+# CONFIG_KERNEL_ELF_CORE is not set
+# CONFIG_KERNEL_IO_URING is not set
+# CONFIG_KERNEL_KALLSYMS is not set
+# CONFIG_KERNEL_KEXEC is not set
+# CONFIG_KERNEL_MAGIC_SYSRQ is not set
+# CONFIG_KERNEL_SWAP is not set
+CONFIG_LUCI_LANG_en=y
+CONFIG_LUCI_LANG_nl=y
+CONFIG_LUCI_SRCDIET=y
+CONFIG_OPENSSL_ENGINE=y
+CONFIG_OPENSSL_OPTIMIZE_SPEED=y
+CONFIG_OPENSSL_PREFER_CHACHA_OVER_GCM=y
+CONFIG_OPENSSL_WITH_ASM=y
+CONFIG_OPENSSL_WITH_CHACHA_POLY1305=y
+CONFIG_OPENSSL_WITH_CMS=y
+CONFIG_OPENSSL_WITH_DEPRECATED=y
+CONFIG_OPENSSL_WITH_ERROR_MESSAGES=y
+CONFIG_OPENSSL_WITH_PSK=y
+CONFIG_OPENSSL_WITH_SRP=y
+CONFIG_OPENSSL_WITH_TLS13=y
+CONFIG_PACKAGE_adblock=y
+CONFIG_PACKAGE_bmon=y
+CONFIG_PACKAGE_ca-certificates=y
+CONFIG_PACKAGE_cgi-io=y
+CONFIG_PACKAGE_confuse=y
+CONFIG_PACKAGE_ddns-scripts=y
+CONFIG_PACKAGE_dnsmasq-dhcpv6=y
+CONFIG_PACKAGE_htop=y
+CONFIG_PACKAGE_https-dns-proxy=y
+CONFIG_PACKAGE_ip6tables-nft=y
+CONFIG_PACKAGE_iperf3=y
+CONFIG_PACKAGE_iptables-mod-ipopt=y
+CONFIG_PACKAGE_iptables-nft=y
+CONFIG_PACKAGE_irqbalance=y
+CONFIG_PACKAGE_kmod-crypto-acompress=m
+CONFIG_PACKAGE_kmod-crypto-authenc=y
+CONFIG_PACKAGE_kmod-crypto-cbc=m
+CONFIG_PACKAGE_kmod-crypto-cts=m
+CONFIG_PACKAGE_kmod-crypto-deflate=m
+CONFIG_PACKAGE_kmod-crypto-des=m
+CONFIG_PACKAGE_kmod-crypto-lib-blake2s=y
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20=y
+CONFIG_PACKAGE_kmod-crypto-lib-chacha20poly1305=y
+CONFIG_PACKAGE_kmod-crypto-lib-curve25519=y
+CONFIG_PACKAGE_kmod-crypto-lib-poly1305=y
+CONFIG_PACKAGE_kmod-crypto-md5=m
+CONFIG_PACKAGE_kmod-crypto-sha1=m
+CONFIG_PACKAGE_kmod-crypto-sha512=m
+CONFIG_PACKAGE_kmod-crypto-xts=m
+CONFIG_PACKAGE_kmod-cryptodev=y
+CONFIG_PACKAGE_kmod-ifb=y
+CONFIG_PACKAGE_kmod-ip6tables=y
+CONFIG_PACKAGE_kmod-ipt-core=y
+CONFIG_PACKAGE_kmod-ipt-ipopt=y
+CONFIG_PACKAGE_kmod-lib-zlib-deflate=m
+CONFIG_PACKAGE_kmod-lib-zlib-inflate=m
+CONFIG_PACKAGE_kmod-nf-ipt=y
+CONFIG_PACKAGE_kmod-nf-ipt6=y
+CONFIG_PACKAGE_kmod-nft-compat=y
+CONFIG_PACKAGE_kmod-sched-cake=y
+CONFIG_PACKAGE_kmod-sched-core=y
+CONFIG_PACKAGE_kmod-tun=y
+CONFIG_PACKAGE_kmod-udptunnel4=y
+CONFIG_PACKAGE_kmod-udptunnel6=y
+CONFIG_PACKAGE_kmod-wireguard=y
+CONFIG_PACKAGE_libcap-ng=y
+CONFIG_PACKAGE_libip4tc=y
+CONFIG_PACKAGE_libip6tc=y
+CONFIG_PACKAGE_libiptext=y
+CONFIG_PACKAGE_libiptext-nft=y
+CONFIG_PACKAGE_libiptext6=y
+CONFIG_PACKAGE_libiwinfo-lua=y
+CONFIG_PACKAGE_liblua=y
+CONFIG_PACKAGE_liblucihttp=y
+CONFIG_PACKAGE_liblucihttp-lua=y
+CONFIG_PACKAGE_libncurses=y
+CONFIG_PACKAGE_libnl-core=y
+CONFIG_PACKAGE_libnl-route=y
+CONFIG_PACKAGE_libopenssl=y
+CONFIG_PACKAGE_libopenssl-conf=y
+CONFIG_PACKAGE_libopenssl-devcrypto=y
+CONFIG_PACKAGE_libpcap=y
+CONFIG_PACKAGE_librt=y
+CONFIG_PACKAGE_libubus-lua=y
+CONFIG_PACKAGE_libuci-lua=y
+CONFIG_PACKAGE_libustream-openssl=y
+# CONFIG_PACKAGE_libustream-wolfssl is not set
+CONFIG_PACKAGE_libuuid=y
+# CONFIG_PACKAGE_libwolfssl is not set
+CONFIG_PACKAGE_libxtables=y
+CONFIG_PACKAGE_lua=y
+CONFIG_PACKAGE_luci=y
+CONFIG_PACKAGE_luci-app-adblock=y
+CONFIG_PACKAGE_luci-app-advanced-reboot=y
+CONFIG_PACKAGE_luci-app-ddns=y
+CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-https-dns-proxy=y
+CONFIG_PACKAGE_luci-app-opkg=y
+CONFIG_PACKAGE_luci-app-sqm=y
+CONFIG_PACKAGE_luci-app-uhttpd=y
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-wireguard=y
+CONFIG_PACKAGE_luci-base=y
+CONFIG_PACKAGE_luci-i18n-advanced-reboot-en=y
+CONFIG_PACKAGE_luci-i18n-base-en=y
+CONFIG_PACKAGE_luci-i18n-base-nl=y
+CONFIG_PACKAGE_luci-i18n-firewall-en=y
+CONFIG_PACKAGE_luci-i18n-firewall-nl=y
+CONFIG_PACKAGE_luci-i18n-opkg-en=y
+CONFIG_PACKAGE_luci-i18n-sqm-en=y
+CONFIG_PACKAGE_luci-i18n-upnp-en=y
+CONFIG_PACKAGE_luci-i18n-wireguard-en=y
+CONFIG_PACKAGE_luci-lib-base=y
+CONFIG_PACKAGE_luci-lib-ip=y
+CONFIG_PACKAGE_luci-lib-jsonc=y
+CONFIG_PACKAGE_luci-lib-nixio=y
+CONFIG_PACKAGE_luci-lib-nixio_openssl=y
+CONFIG_PACKAGE_luci-mod-admin-full=y
+CONFIG_PACKAGE_luci-mod-network=y
+CONFIG_PACKAGE_luci-mod-status=y
+CONFIG_PACKAGE_luci-mod-system=y
+CONFIG_PACKAGE_luci-proto-ipv6=y
+CONFIG_PACKAGE_luci-proto-ppp=y
+CONFIG_PACKAGE_luci-proto-wireguard=y
+CONFIG_PACKAGE_luci-ssl-openssl=y
+CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_miniupnpd-nftables=y
+CONFIG_PACKAGE_nano=y
+CONFIG_PACKAGE_openssl-util=y
+CONFIG_PACKAGE_rpcd=y
+CONFIG_PACKAGE_rpcd-mod-file=y
+CONFIG_PACKAGE_rpcd-mod-iwinfo=y
+CONFIG_PACKAGE_rpcd-mod-luci=y
+CONFIG_PACKAGE_rpcd-mod-rrdns=y
+CONFIG_PACKAGE_sqm-scripts=y
+CONFIG_PACKAGE_tc-mod-iptables=y
+CONFIG_PACKAGE_tc-tiny=y
+CONFIG_PACKAGE_tcpdump=y
+CONFIG_PACKAGE_terminfo=y
+CONFIG_PACKAGE_uhttpd=y
+CONFIG_PACKAGE_uhttpd-mod-ubus=y
+CONFIG_PACKAGE_wireguard-tools=y
+CONFIG_PACKAGE_wpad-openssl=y
+CONFIG_PACKAGE_xtables-nft=y
+CONFIG_PKG_ASLR_PIE_ALL=y
+# CONFIG_PKG_ASLR_PIE_REGULAR is not set
+# CONFIG_PKG_CC_STACKPROTECTOR_REGULAR is not set
+CONFIG_PKG_CC_STACKPROTECTOR_STRONG=y
+# CONFIG_PKG_FORTIFY_SOURCE_1 is not set
+CONFIG_PKG_FORTIFY_SOURCE_2=y
+CONFIG_REPRODUCIBLE_DEBUG_INFO=y
+CONFIG_STRIP_KERNEL_EXPORTS=y
+# CONFIG_TARGET_ROOTFS_TARGZ is not set
+#CONFIG_VERSIONOPT=y
+#CONFIG_VERSION_BUG_URL="https://gitlab.com/divested/Divested-WRT/-/issues"
+#CONFIG_VERSION_CODE=""
+#CONFIG_VERSION_CODE_FILENAMES=y
+#CONFIG_VERSION_DIST="Divested-WRT"
+#CONFIG_VERSION_FILENAMES=y
+#CONFIG_VERSION_HOME_URL="https://divested.dev/unofficial-openwrt-builds/mvebu-linksys"
+#CONFIG_VERSION_HWREV=""
+#CONFIG_VERSION_MANUFACTURER="Divested Computing Group"
+#CONFIG_VERSION_MANUFACTURER_URL="https://divested.dev"
+#CONFIG_VERSION_NUMBER=""
+#CONFIG_VERSION_PRODUCT=""
+#CONFIG_VERSION_REPO="https://downloads.openwrt.org/snapshots"
+#CONFIG_VERSION_SUPPORT_URL="https://forum.openwrt.org/t/divested-wrt-no-nonsense-linksys-wrt-builds/80522"
+# CONFIG_WPA_WOLFSSL is not set
+
