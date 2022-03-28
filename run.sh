@@ -12,7 +12,7 @@ fi
 make dirclean
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-cd ../openwrt-buildtools
+cd ../openwrt-buildsetup
 
 rm ../openwrt/patches
 rm ../openwrt/files
@@ -26,4 +26,4 @@ make menuconfig
 make defconfig
 make download -j3
 make -j3
-cd ../openwrt-buildtools
+cd ../openwrt-buildsetup
