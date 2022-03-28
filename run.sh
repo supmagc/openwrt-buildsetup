@@ -1,13 +1,17 @@
 #!/bin/bash
 
+set -x
+
+git config pull.rebase true
 git pull origin
 
-if [! -d '../openwrt']; then
+if [ ! -d '../openwrt' ]; then
     cd ../
     git clone https://git.openwrt.org/openwrt/openwrt.git
     cd openwrt
 else
     cd ../openwrt
+    git config pull.rebase true
     git checkout master
     git pull origin
 fi
@@ -16,11 +20,11 @@ make dirclean
 ./scripts/feeds install -a
 cd ../openwrt-buildsetup
 
-rm ../openwrt/patches
-rm ../openwrt/files
-cp ./configs/config.buildinfo ../openwrt/.config
-cp ./patches ../openwrt/
-cp ./files ../openwrt/
+rm -r ../openwrt/patches
+rm -r ../openwrt/files
+cp -p ./configs/config.buildinfo ../openwrt/.config
+cp -rp ./patches ../openwrt/
+cp -rp ./files ../openwrt/
 
 cd ../openwrt
 git am
