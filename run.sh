@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+set -ex
 
 git config pull.rebase true
 git pull origin
@@ -15,7 +15,6 @@ else
     git checkout master
     git pull origin
 fi
-make dirclean
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 cd ../openwrt-buildsetup
@@ -28,6 +27,7 @@ cp -rp ./files ../openwrt/
 
 cd ../openwrt
 git am
+make dirclean
 make menuconfig
 make defconfig
 make download -j3
